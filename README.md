@@ -9,3 +9,6 @@ weisudi
   
 2. Sinatra
   gem install sinatra
+
+###License
+Under GPLV2 License.
