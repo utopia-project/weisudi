@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>New Task</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/bootstrap3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+        <form role="form">
+            <div class="form-group">
+                <label for="receiverWeChatNameInput">接收人微信</label>
+                <input type="text" class="form-control" id="receiverWeChatNameInput" placeholder="输入接收人微信号">
+            </div>
+
+            <div class="form-group">
+                <label for="receiverCircle">接收人所在圈子</label>
+                <input type="text" class="form-control" id="receiverCircle" placeholder="输入接收人所在圈子">
+            </div>
+
+            <div class="form-group">
+                <label for="exchangeDateInput">物品交接日期</label>
+                <input type="text" class="form-control" id="exchangeDateInput" placeholder="2014-4-21 或 2014 4 21">
+            </div>
+
+            <div class="form-group">
+                <label for="exchangeTimeInput">物品交接时间</label>
+                <input type="text" class="form-control" id="exchangeTimeInput" placeholder="9 10 或 9:30 - 10:30">
+            </div>            
+
+            <div class="form-group">
+                <label for="sendCircleInput">物品所在圈子</label>
+                <input type="text" class="form-control" id="sendCircleInput" placeholder="输入物品所在圈子">
+            </div>            
+
+            <div class="form-group">
+                <label for="descInput">物品描述</label>
+                <textarea class="form-control" rows="3" id="descInput" placeholder="描述物品大小，重量，是否是液体或粉末"></textarea>
+            </div> 
+
+            <div class="checkbox">
+                <label >
+                    <input type="checkbox" id="isDangeroutInput"> 包含航空禁运物品
+                    <p class="help-block">航空禁运物品一般包含液体，粉末，电池等。详细参考<a href="http://www.caac.gov.cn/B1/B6/201310/t20131016_58946.html">中国民用航空危险品运输管理规定</a></p>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-success">创建任务</button>
+
+        </form>
+    </div>
+  </body>
+
+</html>
